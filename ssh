@@ -1,0 +1,35 @@
+# ssh to 10.10.10.10
+ssh 10.10.10.10
+
+# ssh to 10.10.10.10 port 123
+ssh 10.10.10.10 -p123
+
+# ssh with user thienln
+ssh thienln@10.10.10.10 
+
+# ssh with private key 
+ssh -i /home/thienln/.ssh/id_rsa thienln@10.10.10.10 -p1234
+
+
+# ssh config 
+/home/thienln/.ssh/config 
+```
+Include /home/thienln/.ssh/hosts_list.d/*.conf
+```
+
+# ssh host list 
+/home/thienln/.ssh/hosts_list.d/lab.conf 
+
+```
+Host lab-*
+        User thienln
+        Port 123
+        IdentityFile /home/thienln/.ssh/id_rsa
+
+Host lab-01
+        HostName 10.10.10.1
+```
+
+# ssh to host in ssh config host list 
+ssh lab-01 
+
