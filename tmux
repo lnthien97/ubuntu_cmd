@@ -39,8 +39,17 @@ tmux source .tmux.conf
 # create new session
 tmux new -s <my_session>
 
+# list session
+tmux ls 
+
+# enter (attach) session
+tmux a -t <my_session>
+
 # new window
 ctrl+a  c 
+
+# move to next window
+shift + left/right arrow 
 
 # split horizon 
 ctrl+a % 
@@ -50,3 +59,9 @@ ctrl+a "
 
 # list session
 ctrl+a s 
+
+# delete window
+ctrl+a x
+
+# exit (detach) session
+ctrl+a d
