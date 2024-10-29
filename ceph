@@ -1,0 +1,18 @@
+ceph -s 
+
+ceph health detail 
+
+ceph orch ls 
+
+ceph orch ls --export 
+
+ceph orch host ls 
+
+ceph orch ps 
+
+ceph orch restart <daemon>
+
+ceph osd tree 
+
+ceph osd pool ls 
+
