@@ -1,0 +1,11 @@
+openstack project list 
+
+openstack user list 
+
+openstack role list 
+
+openstack endpoint list 
+
+
+
+openstack user create 

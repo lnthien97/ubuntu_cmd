@@ -1,0 +1,5 @@
+swift auth 
+
+swift stat 
+
+swift post container [-H 'X-Storage-Policy: archive']
